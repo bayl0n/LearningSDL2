@@ -62,7 +62,7 @@ SDL_Surface* loadSurface(char* path) {
 	//Load image at the specified path
 	SDL_Surface* loadedSurface = SDL_LoadBMP(path);
 	if(loadedSurface == NULL) {
-		printf("Unable to laod image %s! SDL_Error: %s", path, SDL_GetError());
+		printf("Unable to load image %s! SDL_Error: %s", path, SDL_GetError());
 	}
 
 	return loadedSurface;
